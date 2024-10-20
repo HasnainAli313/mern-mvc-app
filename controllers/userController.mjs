@@ -6,7 +6,7 @@ export const getAllUsers = async (req, res) => {
     const users = await User.find();
     res.status(200).json(users);
   } catch (err) {
-    res.status(500).json({ message: "Error fetching users" });
+    res.status(500).json({ message: "Error fetch" });
   }
 };
 
